@@ -1,0 +1,6 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions" # This tells Dependabot to monitor GitHub Actions
+    directory: "/"  # Location of the workflows in the repository
+    schedule:
+      interval: "weekly"  # Frequency of the checks
