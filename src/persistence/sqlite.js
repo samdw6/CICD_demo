@@ -1,7 +1,7 @@
 import fs from 'node:fs';
 import sqlite3 from 'sqlite3';
 import {
-  open
+  open,
 } from 'sqlite';
 import Boom from '@hapi/boom';
 import generateFakeData from './generateFakeData.js';

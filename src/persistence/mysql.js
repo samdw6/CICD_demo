@@ -14,7 +14,7 @@ export async function initialize() {
     'CREATE TABLE IF NOT EXISTS `animals` (' +
     '`id` INT NOT NULL, ' +
     '`name` VARCHAR(255) NOT NULL, ' +
-    'PRIMARY KEY (`id`));'
+    'PRIMARY KEY (`id`));',
   );
 
   const [animalCount] = await knexInstance('animals').count();
