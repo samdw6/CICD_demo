@@ -8,5 +8,20 @@
     build:
       runs-on: ubuntu-latest
       steps:
+        # Step 1: Check out the repository code
         - name: Check out repository code
-          uses: actions/checkout@v3
+          uses: actions/checkout@v4
+  
+        # Step 2: Set up Node.js 20
+        - name: Set up Node.js 20
+          uses: actions/setup-node@v4
+          with:
+            node-version: 20
+  
+        # Step 3: Install dependencies using yarn
+        - name: Install dependencies
+          run: yarn install
+  
+        # Step 4: Run the linter
+        - name: Lint the project
+          run: yarn lint
